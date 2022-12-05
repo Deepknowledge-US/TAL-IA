@@ -1,5 +1,7 @@
 # TAL.IA: TrAducción de la Lengua de signos mediante Inteligencia Artificial
 
+<img src="img/profile.png" alt="Profile picture" width="30%">
+
 La lengua de signos es la herramienta fundamental de la que dispone una persona sorda para comunicarse. Sin embargo, esta lengua solo la aprenden, además de los sordos, sus familiares e intérpretes (en total, menos del 1% de la población). Así pues, conseguir comunicarse con un porcentaje mucho mayor de la población se convierte en una necesidad fundamental para la comunidad sorda. En este sentido, con el fin de mejorar la comunicación entre personas sordas y oyentes, este proyecto plantea un sistema que, aplicando las últimas técnicas de Inteligencia Artificial (IA) aplicadas a la Lengua de Signos (LS) Española mediante visión por computador, permita convertir un mensaje expresado en LS a su traducción en voz/texto. En ese sentido lo primero es generar un dataset lo suficientemente amplio.
 
 
