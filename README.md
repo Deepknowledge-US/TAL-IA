@@ -13,8 +13,8 @@ La lengua de signos es la herramienta fundamental de la que dispone una persona 
 Las dos principales herramientas en las que hemos centrado nuestra atención son la expansión de datos (*data augmentation*) y los *deepfakes*, transformaciones que actualmente están cambiando el campo de la Inteligencia Artificial, y que pretendemos usar emplear en el caso del Reconocimiento del Lenguaje de Signos (SLR).
 
 Referencias:
-* [*Data augmentation*](https://tal-ia.github.io/data_augmentation/)
-* [*DeepFakes*](https://tal-ia.github.io/deepfakes/)
+* [*Data augmentation*](https://github.com/Deepknowledge-US/TAL-IA/tree/main/data_augmentation)
+* [*DeepFakes*](https://github.com/Deepknowledge-US/TAL-IA/tree/main/deepfakes)
 
 ## El conjunto de datos de la Universidad de Sevilla
 
