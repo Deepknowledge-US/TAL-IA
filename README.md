@@ -2,17 +2,13 @@
 
 <img src="img/profile.png" alt="Profile picture" width="30%">
 
-La lengua de signos es la herramienta fundamental de la que dispone una persona sorda para comunicarse. Sin embargo, esta lengua solo la aprenden, además de los sordos, sus familiares e intérpretes (en total, menos del 1% de la población). Así pues, conseguir comunicarse con un porcentaje mucho mayor de la población se convierte en una necesidad fundamental para la comunidad sorda. En este sentido, con el fin de mejorar la comunicación entre personas sordas y oyentes, este proyecto plantea un sistema que, aplicando las últimas técnicas de Inteligencia Artificial (IA) aplicadas a la Lengua de Signos (LS) Española mediante visión por computador, permita convertir un mensaje expresado en LS a su traducción en voz/texto. En ese sentido lo primero es generar un dataset lo suficientemente amplio.
-
-
-## Sobre este documento
-- README en desarrollo, pero ya con algo de contenido que mostrar.
-- Repositorios auxiliares prácticamente vacíos.
-  - Pero con estilo.
+La lengua de signos es la herramienta fundamental de la que dispone una persona sorda para comunicarse. Sin embargo, esta lengua solo la aprenden, además de los sordos, sus familiares e intérpretes (en total, menos del 1% de la población). Así pues, conseguir comunicarse con un porcentaje mucho mayor de la población se convierte en una necesidad fundamental para la comunidad sorda. En este sentido, con el fin de mejorar la comunicación entre personas sordas y oyentes, este proyecto plantea un sistema que, aplicando las últimas técnicas de Inteligencia Artificial (IA) aplicadas a la Lengua de Signos Española (LSE) mediante visión por computador, permita convertir un mensaje expresado en LS a su traducción en voz/texto. En ese sentido lo primero es generar un dataset lo suficientemente amplio.
 
 ## Objetivos
 
-Las dos principales herramientas en las que hemos centrado nuestra atención son la expansión de datos (*data augmentation*) y los *deepfakes*, transformaciones que actualmente están cambiando el campo de la Inteligencia Artificial, y que pretendemos usar emplear en el caso del Reconocimiento del Lenguaje de Signos (SLR).
+El primer objetivo es el de recopilar un dataset suficiente  para entrenar modelos y realizar inferencia sobre la LSE. El dataset está disponible en esta dirección: https://uses0-my.sharepoint.com/personal/mptrigo_us_es/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fmptrigo%5Fus%5Fes%2FDocuments%2FDocumentos%2FLSE%2FCALSE100%2FOriginal&ga=1 
+
+Las dos principales herramientas en las que hemos centrado nuestra atención son la expansión de datos (*data augmentation*) y los *deepfakes*, transformaciones que actualmente están cambiando el campo de la Inteligencia Artificial, y que pretendemos usar emplear en el caso del Reconocimiento Aislado del Lenguaje de Signos (ISLR).
 
 Referencias:
 * [*Data augmentation*](https://github.com/Deepknowledge-US/TAL-IA/tree/main/data_augmentation)
@@ -20,7 +16,7 @@ Referencias:
 
 ## El conjunto de datos de la Universidad de Sevilla
 
-TODO: Origen, obtención, procesamiento con MediaPipe.
+Origen, obtención, procesamiento con MediaPipe.
 
 * [Glosario en Lengua de Signos Española].
 
@@ -35,19 +31,7 @@ Tras el procesamiento:
 
 ## Resultados obtenidos
 
-### SACU-100
- 
- Pincha [aquí](img/under_development.jpeg) para acceder a este conjunto de datos.
- 
-> **TODO**:
-  - Explicar la metodología empleada.
-  - Comentar algunas estadísticas sobre el conjunto de datos.
-  - Un par de gifs con ejemplos de contenido.
-  
-
-### SACU-I3D-10
-
-Pincha [aquí](img/under_development.jpeg) para acceder a este conjunto de datos.
+### CALSE-100
 
 Este conjunto se ha creado con **8 clases** tomadas de las palabras del SACU, a saber: alcazar, desierto, blog, apagar, error, fe, cementerio, obispo. Las palabras han sido escogidas al ser comunes y poder encontrarse en otros diccionarios. De hecho, para poder trabajar con un conjunto de datos un poco más complejo, hemos añadido 7 vídeos adicionales del diccionario Spread the Sign, y 8 del Dilse, con la idea de poder usar un conjunto test novedoso.
 
