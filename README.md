@@ -1,71 +1,83 @@
 # TAL.IA: TrAducción de la Lengua de signos mediante Inteligencia Artificial
+<p align="center">
+<img src="img/profile3.png" alt="Profile picture" width="60%">
+</p>
+ 
+  
+Sign Languages (SL) are the main medium of communication for the deaf community. However, only the deaf themselves, their families and interpreters (less than 1% of the total population) learn it. Consequently, improving communication with hearing people is a fundamental need for the deaf community. In this sense, this project proposes a system that, through the use of Artificial Intelligence (AI) techniques applied to Spanish Sign Language by means of computer vision, allows to convert a message in SL to its voice/text translation. 
+  
 
-<img src="img/profile.png" alt="Profile picture" width="30%">
 
-La lengua de signos es la herramienta fundamental de la que dispone una persona sorda para comunicarse. Sin embargo, esta lengua solo la aprenden, además de los sordos, sus familiares e intérpretes (en total, menos del 1% de la población). Así pues, conseguir comunicarse con un porcentaje mucho mayor de la población se convierte en una necesidad fundamental para la comunidad sorda. En este sentido, con el fin de mejorar la comunicación entre personas sordas y oyentes, este proyecto plantea un sistema que, aplicando las últimas técnicas de Inteligencia Artificial (IA) aplicadas a la Lengua de Signos Española (LSE) mediante visión por computador, permita convertir un mensaje expresado en LS a su traducción en voz/texto. En ese sentido lo primero es generar un dataset lo suficientemente amplio.
+## Table of contents
+1. [Methodology](https://github.com/Deepknowledge-US/TAL-IA/edit/main/README.md#methodology)
+    - [CALSE-100 Dataset](https://github.com/Deepknowledge-US/TAL-IA/edit/main/README.md#calse-100-dataset)
+    - [Data augmentation](https://github.com/Deepknowledge-US/TAL-IA/edit/main/README.md#data-augmentation)
+    - [Deepfakes](https://github.com/Deepknowledge-US/TAL-IA/edit/main/README.md#deepfakes)
 
-## Objetivos
+2. [Implementation details](https://github.com/Deepknowledge-US/TAL-IA/edit/main/README.md#implementation-details)
 
-El primer objetivo es el de recopilar un dataset suficiente  para entrenar modelos y realizar inferencia sobre la LSE. El dataset está disponible en esta dirección: https://uses0-my.sharepoint.com/personal/mptrigo_us_es/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fmptrigo%5Fus%5Fes%2FDocuments%2FDocumentos%2FLSE%2FCALSE100%2FOriginal&ga=1 
+3. [Results](https://github.com/Deepknowledge-US/TAL-IA/edit/main/README.md#results)
 
-Las dos principales herramientas en las que hemos centrado nuestra atención son la expansión de datos (*data augmentation*) y los *deepfakes*, transformaciones que actualmente están cambiando el campo de la Inteligencia Artificial, y que pretendemos usar emplear en el caso del Reconocimiento Aislado del Lenguaje de Signos (ISLR).
+4. [Future work](https://github.com/Deepknowledge-US/TAL-IA/edit/main/README.md#future-work)
 
-Referencias:
-* [*Data augmentation*](https://github.com/Deepknowledge-US/TAL-IA/tree/main/data_augmentation)
-* [*DeepFakes*](https://github.com/Deepknowledge-US/TAL-IA/tree/main/deepfakes)
+## Methodology
 
-## El conjunto de datos de la Universidad de Sevilla
+The first aim is to gather a sufficiently extensive dataset for training models focused on Isolated Sign Language Recognition (ISLR). For this purpose, a dataset called CALSE-100 (Conjunto Aislado de Lengua de Signos Española) composed of 100 gloss with 600 videos in total collected from different data sources has been defined and is available at [this address](https://uses0-my.sharepoint.com/:f:/g/personal/mptrigo_us_es/EnaUwfyXahFPoSOg_mj4JwEBsRXjKIVNDtMYpAqv714bhg?e=Q7tJ7L).   
 
-Origen, obtención, procesamiento con MediaPipe.
+In addition, data expansion techniques have been applied: [*data augmentation*](https://github.com/Deepknowledge-US/TAL-IA/tree/main/data_augmentation), which is usually used in several fields of deep learning to improve the quality and size of the training set, as well as [*Deepfakes*](https://github.com/Deepknowledge-US/TAL-IA/tree/main/deepfakes), which besides expanding the content of the training set will allow to anonymize the data while maintaining the facial expression of the signs.
 
-* [Glosario en Lengua de Signos Española].
+### CALSE-100 Dataset 
+The CALSE-100 set has been formed by obtaining videos from 3 different, publicly available data sources, which are the Dictionary of Spanish Sign Language ([DILSE](https://fundacioncnse-dilse.org/)) and Spread the Sign ([STS](http://www.spreadthesign.com/es.es/search/)) dictionaries, as well as the dataset from the University Community Assistance Service ([SACU](https://sacu.us.es/ne-prestaciones-discapacidad-glosario)) of the University of Seville.
 
-Originales:
-<p align='center'><img src='gif/sinprocesar_Algebra.gif' width='80%'><br><sup>Vídeo original para la palabra "Álgebra".</sup><br></p>
+<p align="center">
+<img src="img/public_datasets.png" alt="Public datasets" width="70%">
+</p>
 
-Muestra del recorte basado en [MediaPipe](https://mediapipe.dev/):
-<p align='center'><img src='gif/MP_Algebra.gif' width='40%'><br><sup>Estimación de la *pose* con MediaPipe.</sup><br></p>
+CALSE-100 is composed of 100 gloss, with three video samples of each gloss extracted from the sources described above.
 
-Tras el procesamiento:
-<p align='center'><img src='gif/original_Algebra.gif' width='40%'><br><sup>Vídeo procesado para la palabra "Álgebra".</sup><br></p>
+In addition, this set has also been signed by a professional Spanish Sign Language interpreter, thus being able to add more examples for each word in the set. Thanks to this collaboration, 3 more items of each word have been incorporated, thus obtaining a total of 6 examples of each word. 
 
-## Resultados obtenidos
+To ensure that the sign language recognition model can handle the diverse scenarios that can arise in everyday life, it is essential to include variations in the signs' appearance and singing paces during training. To achieve this, we have defined several scenarios for the repetitions of videos signed by the interpreter. These scenarios include changes in perspective (such as front view or profile), the emphasis during sign execution, and variations in clothing, among other factors. 
+This approach helps to introduce variability between different elements of the same signed words, ultimately leading to an enhanced dataset and a more robust model.
 
-### CALSE-100
+<p align="center">
+<img src="img/macarena_items.png" alt="Macarena views" width="70%">
+</p>
 
-Este conjunto se ha creado con **8 clases** tomadas de las palabras del SACU, a saber: alcazar, desierto, blog, apagar, error, fe, cementerio, obispo. Las palabras han sido escogidas al ser comunes y poder encontrarse en otros diccionarios. De hecho, para poder trabajar con un conjunto de datos un poco más complejo, hemos añadido 7 vídeos adicionales del diccionario Spread the Sign, y 8 del Dilse, con la idea de poder usar un conjunto test novedoso.
 
-Para poder poner a prueba nuestra hipótesis —la utilidad de la expansión de datos (*data augmentation*) y de los *deepfakes* para mejorar la precisión de un modelo— optamos por realizar un número considerable de experimentos recurriendo a este conjunto, contemplando en cada caso diferentes configuraciones para obtener información útil. Adicionalmente, cabe destacar que recurrimos al modelo I3D de reconocimiento del lenguaje de signos, tal y como es empleado en el artículo de presentación del conjunto de datos WLASL, *WLASL-LEX: a Dataset for Recognising Phonological Properties in American Sign Language*.
 
-Usamos $S$ para denotar al conjunto de los 10 vídeos originales con los que trabajamos —$S_{I}$ representará a los signantes identificados por $I$ de $S$—, $T_1$ y $T_2$ para las transformaciones, $DF$ para los *DeepFakes*, y D para el conjunto test, formado por 8 vídeos del diccionario Dilse:
+### Data augmentation
+To increase datasets size that will launch augmentations on the videos, a new, publicly available [library](https://github.com/RodGal-2020/video_augmentation) has been used.
 
-$$T_1 = ('aff', 'apepper', 'blur', 'usample-0.1')$$
+Although several functions are implemented to apply transformations, we will only consider affine transformations, since it includes the classical transformations, i.e. translations, reflections, scalings and rotations. In addition, the function applies a random affine transformation, which may therefore result in the application of one of the above transformations. However, the library adds the possibility to apply these transformations individually, in order to provide a complete tool.
 
-$$T_2 = ('aff', 'bsalt', 'mblur', 'dsample-0.2')$$
+<p align="center">
+<img src="gif/000503.gif" alt="Profile picture" width="36%" style="margin-right: 10px">
+<img src="gif/000510.gif" alt="Profile picture" width="25%" style="margin-right: 10px">
+<img src="gif/000556.gif" alt="Profile picture" width="27%">
+</p>
 
-| ID | Épocas | Clases | Entrenamiento | #Entrenamiento | Test | Precisión | Notas |
-|:-:|:-:|:------:|:-------------:|:----:|:----:|:---------:|:-----:|
-| 10-02 | 52 |  8     | $T_1(S) + T_2(s)$ | 30 | D | 0.125 | Empezaba con 0.25, pero al poco se redujo |
-| 10-03 | 60 | 8 | $S + T_1(S) + T_2(s)$ | 45 | D | 0.25/0.375 | Existe variación, llegando a 0.375 en varias ocasiones |
-| 10-04 | 51 | 8 | $S$ | 15 | D | 0.125 | |
-| 10-05 | 51 | 8 | $T_1(S)$ | 15 | D | 0.125 | |
-| 10-06 | 33 | 8 | $S + DF(S_{1,2})$ | 26 | D | 0.125 | |
-| 10-07 | ?? | 8 | $S + T_1(S)$ | 32 | D | 0.25 | Mejoras claras desde el principio |
-| 10-08 | 32 | 8 | $S + T_1(DF(S_{1,2}))$ | 26 | D | 0.125 | Nótese que no se considera $T_1(S \setminus S_{1,2})$ |
-| 10-09-01 | 22 | 8 | $S + T_1(S) + DF(S_{1,2})$ | 42 | D | 0.125 | Llega a 0.25 y 0.375 al principio |
-| 10-09-01 | 100 | 8 | $S + T_1(S) + DF(S_{1,2})$ | 42 | D | 0.375 | 0.25 subiendo en 252 pasos, llegando a 0.375 más adelante |
-| 10-09-02 | 25 | 8 | $S + T_1(S) + T_1(DF(S_{1,2}))$ | 42 | D | 0.375 | LLega a 0.25 en 162 pasos, y en 266 a la marca|
-| 10-09-02 | 100 | 8 | $S + T_1(S) + T_1(DF(S_{1,2}))$ | 42 | D | 0.375 | A partir del paso 360 empieza a bajar y luego se estabiliza en 0.125 |
 
-> **Nota**: En cada paso se actualizan los pesos y se trabaja con un lote del conjunto de entrenamiento.
 
-## Trabajo relacionado
+### Deepfakes
+To avoid possible problems in maintaining identity through anonymization of the data, the [FaceSwap](https://github.com/deepfakes/faceswap) tool has been used, which employs Deep Learning techniques to recognize and swap faces in each of the signers that make up the CALSE-100 dataset
+
+The face swapping to generate Deepfakes is composed of 3 stages: 
+- Extraction: in this first stage, the extraction of faces from the target video for the later training takes place, in which face landmarks are recognized and the images are cropped, saving the faces to be used for training. In this first step, it is important to have a large set of images containing the face of the subject to be trained, as well as to consider the data's quality and the variety of angles and expressions.
+- Training: in this step, the training of the `Phaze-a' model from FaceSwap is executed for 35,000-40,000 iterations (it depends on the models used for the face swapping), with a batch size of 10.
+- Conversion: in this last stage, the face extraction is performed again (in this case, on the source video) and then the face swapping is performed to obtain the final set of videos with Deepfakes applied.
+
+<p align="center">
+<img src="img/DF.png" alt="Macarena views" width="70%">
+</p>
+
+
+## Implementation details
+
+## Results 
 
 ## Líneas de trabajo futuras
 
-## Líneas de trabajo descartadas
-
-- Traducción del Lenguaje de Signos (SLT).
 
 
 
