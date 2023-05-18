@@ -9,16 +9,16 @@ Sign Languages (SL) are the main medium of communication for the deaf community.
 
 
 ## Table of contents
-1. [Methodology](https://github.com/Deepknowledge-US/TAL-IA/edit/main/README.md#methodology)
-    - [CALSE-100 Dataset](https://github.com/Deepknowledge-US/TAL-IA/edit/main/README.md#calse-100-dataset)
-    - [Data augmentation](https://github.com/Deepknowledge-US/TAL-IA/edit/main/README.md#data-augmentation)
-    - [Deepfakes](https://github.com/Deepknowledge-US/TAL-IA/edit/main/README.md#deepfakes)
+1. [Methodology](https://github.com/Deepknowledge-US/TAL-IA#methodology)
+    - [CALSE-100 Dataset](https://github.com/Deepknowledge-US/TAL-IA#calse-100-dataset)
+    - [Data augmentation](https://github.com/Deepknowledge-US/TAL-IA#data-augmentation)
+    - [Deepfakes](https://github.com/Deepknowledge-US/TAL-IA#deepfakes)
 
-2. [Implementation details](https://github.com/Deepknowledge-US/TAL-IA/edit/main/README.md#implementation-details)
+2. [Implementation details](https://github.com/Deepknowledge-US/TAL-IA#implementation-details)
 
-3. [Results](https://github.com/Deepknowledge-US/TAL-IA/edit/main/README.md#results)
+3. [Results](https://github.com/Deepknowledge-US/TAL-IA#results)
 
-4. [Future work](https://github.com/Deepknowledge-US/TAL-IA/edit/main/README.md#future-work)
+4. [Future work](https://github.com/Deepknowledge-US/TAL-IA#future-work)
 
 ## Methodology
 
