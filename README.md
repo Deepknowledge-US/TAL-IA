@@ -73,11 +73,49 @@ The face swapping to generate Deepfakes is composed of 3 stages:
 
 
 ## Implementation details
+For the isolated recognition we have used the I3D network architecture used in [WLASL](https://github.com/dxli94/WLASL) implemented in PyTorch. 
+
+All experiments utilized identical configurations, employing the Adam optimizer, a batch size of 10, a learning rate of 10<sup>-3</sup> and a total of 60 epochs. To assess the performance of the models, we calculate the average scores for top-K classification accuracy with K = {1, 5, 10}. This evaluation is conducted across all sign instances.
+
+Due to the limited number of samples available for each sign, the dataset was divided into training and test sets only, applying the cross-dataset approach, so that one of the datasets is separated as a test set (equivalent to one example per sign) and the rest as a training set. Therefore, the experimental series was repeated three times: once with the SACU as test set, once with STS, and finally leaving DILSE out of the training set.
+
+<p align="center">
+<img src="img/preliminar_experiments.png" alt="preliminar experimentss" width="70%">
+</p>
+
+To assess the effect of data augmentation on CALSE-100 training, a test battery was created that merged original data from the training set with data generated through Deepfakes and other augmentations. For Deepfakes, three models (two male and one female) were utilized, with 200 new videos generated for each model. Not all of the Deepfake videos created during training were used.
+Additionally, affine transformations were randomly applied to each video in the dataset, with AF1 and AF2 differing in the dataset to which they were applied. Specifically, AF1 corresponds to the affine transformation applied to our interpreter videos, while AF2 applies to videos from the public datasets. 
 
 ## Results 
+Our proposal showed that augmentations during training generally improved the accuracy in the top-1, top-5, and top-10 metrics compared to the baseline experiment. The improvements ranged up to 32.59% in the top-1 metric. 
 
-## Líneas de trabajo futuras
+<figure>
+  <p align="center">
+  <img src="img/results_STS.png" alt="results STS">
+  </p>
+</figure>
+<p align="center"><em>Experiment results executed using STS as a test set.</em></p>
 
 
+<figure>
+  <p align="center">
+  <img src="img/results_DILSE.png" alt="results DILSE">
+  </p>
+</figure>
+<p align="center"><em>Experiment results executed using DILSE as a test set.</em></p>
 
+
+<figure>
+  <p align="center">
+  <img src="img/results_SACU.png" alt="results SACU">
+  </p>
+</figure>
+<p align="center"><em>Experiment results executed using SACU as a test set.</em></p>
+
+
+## Future work
+In future work, we aim to increase the CALSE dataset up to 1000 glosses. Our focus will be on exploring alternative architectures for Sign Language Recognition, that will allow us to improve the accuracy of the results.
+
+## Acknowledgments
+The research associated with this project was also supported by grants from NVIDIA and used NVIDIA A100 donated by our colleague Miguel A. Martinez-del-Amor.
 
