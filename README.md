@@ -19,6 +19,7 @@ Sign Languages (SL) are the main medium of communication for the deaf community.
 3. [Results](https://github.com/Deepknowledge-US/TAL-IA#results)
 
 4. [Future work](https://github.com/Deepknowledge-US/TAL-IA#future-work)
+     - [Other works](https://github.com/Deepknowledge-US/TAL-IA#other-works)
 
 ## Methodology
 
@@ -115,6 +116,15 @@ Our proposal showed that augmentations during training generally improved the ac
 
 ## Future work
 In future work, we aim to increase the CALSE dataset up to 1000 glosses. Our focus will be on exploring alternative architectures for Sign Language Recognition, that will allow us to improve the accuracy of the results.
+
+### Other works
+In a first instance, a mobile application named [SignUS](https://github.com/Deepknowledge-US/TAL-IA/tree/main/signus) was developed to collect videos of deaf people, signers and interpreters in order to get a semi-labeled set of videos (the user records a predetermined phrase, but without segmenting each gloss). Although approximately 20 associations of deaf people are contacted, we do not get users that allow us to accumulate a new dataset. 
+
+However, the application is easily adaptable to recording the deaf person and supplying the video to a translation model that returns the text to the deaf person.
+
+In addition, we are carrying out 2 master's degree final projects associated with our working group related to this study, more specifically:
+- Sign2Text: Automatic Sign Language Translation.
+- Generation of automatic translations between LSE and Spanish glosses. 
 
 ## Acknowledgments
 The research associated with this project was also supported by grants from NVIDIA and used NVIDIA A100 donated by our colleague Miguel A. Martinez-del-Amor.
