@@ -127,5 +127,9 @@ In addition, we are carrying out 2 master's degree final projects associated wit
 - Generation of automatic translations between LSE and Spanish glosses. 
 
 ## Acknowledgments
-The research associated with this project was also supported by grants from NVIDIA and used NVIDIA A100 donated by our colleague Miguel A. Martinez-del-Amor.
+The research associated with this project was also supported by grants from NVIDIA and used NVIDIA A100 donated by our colleague Miguel A. Martinez-del-Amor. We would like to thank the following team members for their work:
+- Macarena Vilches Suárez
+- José Antonio Rodríguez Gallego
+- José Morera Figueroa
+- José Luis Salazar González
 
