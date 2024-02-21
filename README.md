@@ -4,7 +4,7 @@
 </p>
  
   
-Sign Languages (SL) are the main medium of communication for the deaf community. However, only the deaf themselves, their families and interpreters (less than 1% of the total population) learn it. Consequently, improving communication with hearing people is a fundamental need for the deaf community. In this sense, this project proposes a system that, through the use of Artificial Intelligence (AI) techniques applied to Spanish Sign Language by means of computer vision, allows to convert a message in SL to its voice/text translation. 
+  Sign Languages (SL) are the main medium of communication for the deaf community. However, only the deaf themselves, their families and interpreters (less than 1% of the total population) learn it. Consequently, improving communication with hearing people is a fundamental need for the deaf community. In this sense, this project proposes a system that, through the use of Artificial Intelligence (AI) techniques applied to Spanish Sign Language by means of computer vision, allows to convert a message in SL to its voice/text translation. 
   
 
 
@@ -34,7 +34,7 @@ The CALSE-100 set has been formed by obtaining videos from 3 different, publicly
 <img src="img/public_datasets.png" alt="Public datasets" width="70%">
 </p>
 
-CALSE-100 is composed of 100 gloss, with three video samples of each gloss extracted from the sources described above.
+CALSE-100 is composed of 100 glosses, with three video samples of each gloss extracted from the sources described above.
 
 In addition, this set has also been signed by a professional Spanish Sign Language interpreter, thus being able to add more examples for each word in the set. Thanks to this collaboration, 3 more items of each word have been incorporated, thus obtaining a total of 6 examples of each word. 
 
@@ -50,7 +50,7 @@ This approach helps to introduce variability between different elements of the s
 ### Data augmentation
 To increase datasets size that will launch augmentations on the videos, a new, publicly available [library](https://github.com/RodGal-2020/video_augmentation) has been used.
 
-Although several functions are implemented to apply transformations, we will only consider affine transformations, since it includes the classical transformations, i.e. translations, reflections, scalings and rotations. In addition, the function applies a random affine transformation, which may therefore result in the application of one of the above transformations. However, the library adds the possibility to apply these transformations individually, in order to provide a complete tool.
+Although several functions are implemented to apply transformations, we will only consider affine transformations, since it includes the classical transformations, i.e. translations, reflections, scalings and rotations. In addition, the function applies a random affine transformation, which may therefore result in the application of one of the above transformations. However, the library adds the possibility to apply these transformations individually, to provide a complete tool.
 
 <p align="center">
 <img src="gif/000503.gif" alt="Profile picture" width="36%" style="margin-right: 10px">
@@ -144,7 +144,7 @@ The project was supported by [FEDER/Junta de Andalucía - Paidi 2020/ _Proyecto 
 
 The research associated with this project was also supported by grants from NVIDIA and used an A100 GPU donated by the NVIDIA HW Grant awarded to our colleague Miguel A. Martinez-del-Amor. 
 
-We would like to specially thank the following team members for their work:
+We would like to especially thank the following team members for their work:
 - Macarena Vilches Suárez
 - José Antonio Rodríguez Gallego
 - José Morera Figueroa
