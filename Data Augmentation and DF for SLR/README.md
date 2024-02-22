@@ -1,6 +1,6 @@
 
 ## Table of contents
-1. [Methodology](https://github.com/Deepknowledge-US/TAL-IA/data-augmentation-and-df-for-slr#methodology)
+1. [Methodology](https://github.com/Deepknowledge-US/TAL-IA/tree/main/data-augmentation-and-df-for-slr#methodology)
     - [CALSE-100 Dataset](https://github.com/Deepknowledge-US/TAL-IA#calse-100-dataset)
     - [Data augmentation](https://github.com/Deepknowledge-US/TAL-IA#data-augmentation)
     - [Deepfakes](https://github.com/Deepknowledge-US/TAL-IA#deepfakes)
@@ -15,7 +15,7 @@
 
 The first aim is to gather a sufficiently extensive dataset for training models focused on Isolated Sign Language Recognition (ISLR). For this purpose, a dataset called CALSE-100 (Conjunto Aislado de Lengua de Signos Española) composed of 100 gloss with 600 videos in total collected from different data sources has been defined and is available at [this address](https://uses0-my.sharepoint.com/:f:/g/personal/mptrigo_us_es/EnaUwfyXahFPoSOg_mj4JwEBsRXjKIVNDtMYpAqv714bhg?e=Q7tJ7L).   
 
-In addition, data expansion techniques have been applied: [*data augmentation*](https://github.com/Deepknowledge-US/TAL-IA/tree/main/data_augmentation), which is usually used in several fields of deep learning to improve the quality and size of the training set, as well as [*Deepfakes*](https://github.com/Deepknowledge-US/TAL-IA/tree/main/deepfakes), which besides expanding the content of the training set will allow to anonymize the data while maintaining the facial expression of the signs.
+In addition, data expansion techniques have been applied: [*data augmentation*](https://github.com/Deepknowledge-US/TAL-IA/tree/main/data-augmentation-and-df-for-slr/data_augmentation), which is usually used in several fields of deep learning to improve the quality and size of the training set, as well as [*Deepfakes*](https://github.com/Deepknowledge-US/TAL-IA/tree/main/deepfakes), which besides expanding the content of the training set will allow to anonymize the data while maintaining the facial expression of the signs.
 
 ### CALSE-100 Dataset 
 The CALSE-100 set has been formed by obtaining videos from 3 different, publicly available data sources, which are the Dictionary of Spanish Sign Language ([DILSE](https://fundacioncnse-dilse.org/)) and Spread the Sign ([STS](http://www.spreadthesign.com/es.es/search/)) dictionaries, as well as the dataset from the University Community Assistance Service ([SACU](https://sacu.us.es/ne-prestaciones-discapacidad-glosario)) of the University of Seville.
