@@ -10,7 +10,6 @@
 3. [Results](https://github.com/Deepknowledge-US/TAL-IA#results)
 
 4. [Future work](https://github.com/Deepknowledge-US/TAL-IA#future-work)
-     - [Other works](https://github.com/Deepknowledge-US/TAL-IA#other-works)
 
 ## Methodology
 
