@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">SignUS</string>
+    <string name="title_activity_login">SignUS</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="next">Siguiente</string>
+    <string name="previous">Previous</string>
+
+    <string name="error_player">Error al cargar el video: %1$s</string>
+    <string name="message_need_permission">Permisos</string>
+    <string name="message_permission">Se necesitan los siguiente permisos</string>
+    <string name="title_go_to_setting">Ir a ajustes</string>
+    <string name="no_username">El nombre de usuario no puede estar vacío</string>
+    <string name="ok">Aceptar</string>
+    <string name="finish">Finalizar</string>
+    <string name="restart">Reiniciar</string>
+    <string name="username">Nombre o identificador de usuario</string>
+    <string name="start">Comenzar</string>
+    <string name="intro4">En total se mostrarán 6 vídeos y la duración del proceso será de aproximadamente 10 minutos.</string>
+    <string name="intro3">Cuando finalices la grabación del vídeo actual, pulsa siguiente. Esto te llevará al siguiente video. De nuevo, la grabación comenzará de manera automática.  Cuando hayas completado el último vídeo, pulsa en finalizar. Si te has equivocado y deseas repetir algún vídeo, sólo tienes que pulsar sobre el botón reiniciar. Este botón únicamente reiniciará el vídeo actual, así que los videos anteriores no se perderán.</string>
+    <string name="intro2">Esta herramienta te permitirá grabar video en lengua de signos y subirlos directamente al repositorio.</string>
+    <string name="intro1">El funcionamiento es muy sencillo. En la parte superior se mostrará un video con las frases que debes grabar. Deberás repetir lo que se indique. En la parte inferior verás tu imagen. Asegúrate de que tu cuerpo está dentro de la zona de grabación. La grabación empezará automáticamente</string>
+    <string name="title">Bienvenido a SignUS</string>
+    <string name="thanks">Gracias por ayudar en la investigación por un mundo más inclusivo y adaptado</string>
+    <string name="finish_button">Finalizar</string>
+    <string name="username_text">Antes de empezar, indícanos tu nombre</string>
+    <string name="recording">La grabación está en curso. Recuerda que debes signar la frase que ves en el video superior</string>
+    <string name="stopped">La grabación ha finalizado</string>
+    <string name="starting">Preparando la grabación</string>
+    <string name="continueButton">Continuar</string>
+    <string name="configure">Ahora vamos a configurar la cámara para que todo se muestre correctamente. Coloca el móvil asegurándote de que te enfocas completamente, desde la cintura hasta la cabeza. Comprueba también que el móvil está frente a ti, ni demasiado alto, ni demasiado bajo. Cuando estés listo/a, pulsa comenzar.</string>
+    <string name="letsgo">Comencemos</string>
+    <string name="aboutAppTitle">SignUS</string>
+    <string name="aboutAppDescription">Esta aplicación ha sido desarrollada para la generación de un dataset unificado del lenguaje de signos en castellano. Gracias a tu colaboración será posible desarrollar traductores automáticos de lengua de signos</string>
+    <string name="aboutLogoTitle">Instituciones</string>
+    <string name="aboutLogoDescription">Esta aplicación ha sido desarrollada en colaboración entre el grupo de investigación DeepKnowledge de la Universidad de Sevilla y la investigadora Macarena Vilches</string>
+    <string name="aboutUsTitle">Participantes</string>
+    <string name="aboutOwnersTitle">Participantes en el proyecto</string>
+    <string name="aboutOwnersMacarena">Macarena Vilches</string>
+    <string name="aboutOwnersMarina">Marina Perea</string>
+    <string name="aboutOwnersMAM">Miguel Ángel Martínez</string>
+    <string name="aboutOwnersFernando">Fernando Sancho</string>
+    <string name="aboutOwnersJuan">Juan Antonio Álvarez</string>
+    <string name="aboutOwnersLuismi">Luis Miguel Soria</string>
+    <string name="about_button">Sobre nosotros</string>
+    <string name="demasiado_inclinado">Demasiado inclinado. Debes poner el móvil vertical</string>
+    <string name="ready_to_race">¡Perfecto! Podemos empezar</string>
+    <string name="video_duration_singular">Este video dura aproximadamente %1$d minuto</string>
+    <string name="video_duration_plural">Este video dura aproximadamente %1$d minutos</string>
+</resources>
