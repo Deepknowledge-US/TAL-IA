@@ -1,6 +1,6 @@
 
 ## Table of contents
-1. [Methodology](https://github.com/Deepknowledge-US/TAL-IA/tree/main/data-augmentation-and-df-for-slr#methodology)
+1. [Methodology](https://github.com/Deepknowledge-US/TAL-IA/tree/main/Data%20Augmentation%20and%20DF%20for%20SLR#methodology)
     - [CALSE-100 Dataset](https://github.com/Deepknowledge-US/TAL-IA#calse-100-dataset)
     - [Data augmentation](https://github.com/Deepknowledge-US/TAL-IA#data-augmentation)
     - [Deepfakes](https://github.com/Deepknowledge-US/TAL-IA#deepfakes)
