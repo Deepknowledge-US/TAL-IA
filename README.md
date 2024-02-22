@@ -9,14 +9,14 @@
 ## Table of contents
 
 1. [Data Augmentation and Deep Fakes for SLR](https://github.com/Deepknowledge-US/TAL-IA#data-augmentation-and-deep-fakes-for-slr)
-2. LSE Gloss2SpanishText
+2. [CORPUS-SynLSE](https://github.com/Deepknowledge-US/TAL-IA#CORPUS-SynLSE)
 3. [Other works](https://github.com/Deepknowledge-US/TAL-IA#Other-works)
   
 ### [Data Augmentation and Deep Fakes for SLR](https://github.com/Deepknowledge-US/TAL-IA/tree/main/Data%20Augmentation%20and%20DF%20for%20SLR)
 This study addresses the challenge of improving communication between the deaf and hearing community by exploring different Sign Language Recognition (SLR) techniques. Due to privacy issues and the need for validation by interpreters, creating large-scale sign language (SL) datasets can be difficult. This issue is addressed by presenting a new Spanish isolated sign language recognition dataset, CALSE-1000, consisting of 5000 videos representing 1000 glosses, with various signers and scenarios. 
 The study also proposes using different computer vision techniques, such as deepfakes and affine transformations, to augment the SL dataset and improve the accuracy of the model I3D trained using them. 
 
-### LSE Gloss2SpanishText
+### [CORPUS-SynLSE](https://github.com/Deepknowledge-US/TAL-IA/tree/main/CORPUS-SynLSE)
 In this research, a rule-based system, called ruLSE, is presented to generate synthetic Spanish Sign Language datasets. To test the usefulness of these datasets, experiments are performed with two state-of-the-art transformer-based models, MarianMT and Trasformer-STMC. 
 
 ### Other works
