@@ -1,12 +1,3 @@
-# TAL.IA: TrAducción de la Lengua de signos mediante Inteligencia Artificial
-<p align="center">
-<img src="img/profile3.png" alt="Profile picture" width="60%">
-</p>
- 
-  
-  Sign Languages (SL) are the main medium of communication for the deaf community. However, only the deaf themselves, their families and interpreters (less than 1% of the total population) learn it. Consequently, improving communication with hearing people is a fundamental need for the deaf community. In this sense, this project proposes a system that, through the use of Artificial Intelligence (AI) techniques applied to Spanish Sign Language by means of computer vision, allows to convert a message in SL to its voice/text translation. 
-  
-
 
 ## Table of contents
 1. [Methodology](https://github.com/Deepknowledge-US/TAL-IA#methodology)
