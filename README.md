@@ -46,6 +46,7 @@ The research associated with this project was also supported by grants from NVID
 
 We would like to especially thank the following team members for their work:
 - Macarena Vilches Suárez
+- Celia Botella López
 - José Antonio Rodríguez Gallego
 - José Morera Figueroa
 - José Luis Salazar González
