@@ -14,7 +14,7 @@ In this study, we propose two methods to synthetically create a gloss annotation
   - [TransPHOENIX](https://github.com/Deepknowledge-US/TAL-IA/tree/main/CORPUS-SynLSE#transphoenix)
   - [ruLSE](https://github.com/Deepknowledge-US/TAL-IA/tree/main/CORPUS-SynLSE#rulse)
   - [valLSE](https://github.com/Deepknowledge-US/TAL-IA/tree/main/CORPUS-SynLSE#vallse)
-2. [Dataset and Source Code](https://github.com/Deepknowledge-US/TAL-IA/tree/main/CORPUS-SynLSE#Dataset-and-Source-Code)
+2. [Dataset and Source Code](https://github.com/Deepknowledge-US/TAL-IA/tree/main/CORPUS-SynLSE#dataset-and-source-code)
 3. [Implementation Details](https://github.com/Deepknowledge-US/TAL-IA/tree/main/CORPUS-SynLSE#implementation-details)
 4. [Results](https://github.com/Deepknowledge-US/TAL-IA/tree/main/CORPUS-SynLSE#results)
 5. [Future work](https://github.com/Deepknowledge-US/TAL-IA/tree/main/CORPUS-SynLSE#future-work)
@@ -34,8 +34,7 @@ This dataset contains validated sentences to be used to test and compare the acc
 - Uvigo: The dataset LSE_UVIGO, but some words were modified to meet the notation followed by ruLSE.
 
 ### Dataset and Source Code
-
- Available code with the necessary scripts for the creation of the corpus and the corpus itself can be found in the following repositories:
+Available code with the necessary scripts for the creation of the corpus and the corpus itself can be found in the following repositories:
 * tranSPHOENIX and valLSE: [translationLSE](https://github.com/marinaperea13/huggingface-translationLSE)
 * ruLSE: [LSEGloss2SpanishText](https://github.com/celiabotlop/LSEGloss2SpanishText.git)
 
