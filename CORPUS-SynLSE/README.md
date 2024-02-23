@@ -14,7 +14,7 @@ In this study, we propose two methods to synthetically create a gloss annotation
   - [TransPHOENIX](https://github.com/Deepknowledge-US/TAL-IA/tree/main/CORPUS-SynLSE#transphoenix)
   - [ruLSE](https://github.com/Deepknowledge-US/TAL-IA/tree/main/CORPUS-SynLSE#rulse)
   - [valLSE](https://github.com/Deepknowledge-US/TAL-IA/tree/main/CORPUS-SynLSE#vallse)
-2. [Dataset and Source Code](https://github.com/Deepknowledge-US/TAL-IA/tree/main/CORPUS-SynLSE#Dataset-and-Source-Code)
+2. [Dataset and Source Code](https://github.com/Deepknowledge-US/TAL-IA/tree/main/CORPUS-SynLSE#dataset-and-source-code)
 3. [Implementation Details](https://github.com/Deepknowledge-US/TAL-IA/tree/main/CORPUS-SynLSE#implementation-details)
 4. [Results](https://github.com/Deepknowledge-US/TAL-IA/tree/main/CORPUS-SynLSE#results)
 5. [Future work](https://github.com/Deepknowledge-US/TAL-IA/tree/main/CORPUS-SynLSE#future-work)
