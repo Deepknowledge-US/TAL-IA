@@ -14,9 +14,10 @@ In this study, we propose two methods to synthetically create a gloss annotation
   - [TransPHOENIX](https://github.com/Deepknowledge-US/TAL-IA/tree/main/CORPUS-SynLSE#transphoenix)
   - [ruLSE](https://github.com/Deepknowledge-US/TAL-IA/tree/main/CORPUS-SynLSE#rulse)
   - [valLSE](https://github.com/Deepknowledge-US/TAL-IA/tree/main/CORPUS-SynLSE#vallse)
-2. [Implementation Details](https://github.com/Deepknowledge-US/TAL-IA/tree/main/CORPUS-SynLSE#implementation-details)
-3. [Results](https://github.com/Deepknowledge-US/TAL-IA/tree/main/CORPUS-SynLSE#results)
-4. [Future work](https://github.com/Deepknowledge-US/TAL-IA/tree/main/CORPUS-SynLSE#future-work)
+2. [Dataset and Source Code](https://github.com/Deepknowledge-US/TAL-IA/tree/main/CORPUS-SynLSE#Dataset-and-Source-Code)
+3. [Implementation Details](https://github.com/Deepknowledge-US/TAL-IA/tree/main/CORPUS-SynLSE#implementation-details)
+4. [Results](https://github.com/Deepknowledge-US/TAL-IA/tree/main/CORPUS-SynLSE#results)
+5. [Future work](https://github.com/Deepknowledge-US/TAL-IA/tree/main/CORPUS-SynLSE#future-work)
 
 ### Methodology
 Our proposed synthetic parallel corpus, SynLSE, for written LOE (Spanish) and LSE (gloss annotation) consists of three parts: tranSPHOENIX, ruLSE and valLSE. The former is going to be used to explore some hyperparameters for Transformer models, ruLSE is employed for a complete training of selected models, and valLSE is a small set with semi-validated sentences.
