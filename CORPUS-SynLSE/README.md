@@ -14,7 +14,7 @@ In this study, we propose two methods to synthetically create a gloss annotation
   - [TransPHOENIX](https://github.com/Deepknowledge-US/TAL-IA/tree/main/CORPUS-SynLSE#transphoenix)
   - [ruLSE](https://github.com/Deepknowledge-US/TAL-IA/tree/main/CORPUS-SynLSE#rulse)
   - [valLSE](https://github.com/Deepknowledge-US/TAL-IA/tree/main/CORPUS-SynLSE#vallse)
-2. [Dataset and Source Code](https://github.com/Deepknowledge-US/TAL-IA/tree/main/CORPUS-SynLSE#dataset-and-source-code)
+2. [Dataset and Source Code](https://github.com/Deepknowledge-US/TAL-IA/tree/main/CORPUS-SynLSE#Dataset-and-Source-Code)
 3. [Implementation Details](https://github.com/Deepknowledge-US/TAL-IA/tree/main/CORPUS-SynLSE#implementation-details)
 4. [Results](https://github.com/Deepknowledge-US/TAL-IA/tree/main/CORPUS-SynLSE#results)
 5. [Future work](https://github.com/Deepknowledge-US/TAL-IA/tree/main/CORPUS-SynLSE#future-work)
@@ -37,6 +37,8 @@ This dataset contains validated sentences to be used to test and compare the acc
 Available code with the necessary scripts for the creation of the corpus and the corpus itself can be found in the following repositories:
 * tranSPHOENIX and valLSE: [translationLSE](https://github.com/marinaperea13/huggingface-translationLSE)
 * ruLSE: [LSEGloss2SpanishText](https://github.com/celiabotlop/LSEGloss2SpanishText.git)
+
+We plan to upload the whole corpus and associated code to this repository shortly.
 
 ### Implementation Details
 For the set of experiments, two different models were used: STMC-Transformer and the MarianMT model. On the one hand, STMC-Transformer is referenced to the original transformer paper proposed by Vaswani et al. On the other hand, the MarianMT model is also derived from the "base" model of Vaswani et al., but in this case, it was originally trained using the Marian C++ library, which allows fast training and translation.
