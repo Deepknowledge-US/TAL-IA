@@ -1,21 +1,21 @@
 
 ## Table of contents
-1. [Methodology](https://github.com/Deepknowledge-US/TAL-IA/edit/main/Data_Augmentation_and_DF_for_SLR#methodology)
-    - [CALSE-100 Dataset](https://github.com/Deepknowledge-US/TAL-IA/edit/main/Data_Augmentation_and_DF_for_SLR#calse-100-dataset)
-    - [Data augmentation](https://github.com/Deepknowledge-US/TAL-IA/edit/main/Data_Augmentation_and_DF_for_SLR#data-augmentation)
-    - [FaceSwapping](https://github.com/Deepknowledge-US/TAL-IA/edit/main/Data_Augmentation_and_DF_for_SLR#faceswapping)
+1. [Methodology](https://github.com/Deepknowledge-US/TAL-IA/edit/main/Data_Augmentation_and_SF_for_SLR#methodology)
+    - [CALSE-100 Dataset](https://github.com/Deepknowledge-US/TAL-IA/edit/main/Data_Augmentation_and_FS_for_SLR#calse-100-dataset)
+    - [Data augmentation](https://github.com/Deepknowledge-US/TAL-IA/edit/main/Data_Augmentation_and_FS_for_SLR#data-augmentation)
+    - [FaceSwapping](https://github.com/Deepknowledge-US/TAL-IA/edit/main/Data_Augmentation_and_FS_for_SLR#faceswapping)
 
-2. [Implementation details](https://github.com/Deepknowledge-US/TAL-IA/edit/main/Data_Augmentation_and_DF_for_SLR#implementation-details)
+2. [Implementation details](https://github.com/Deepknowledge-US/TAL-IA/edit/main/Data_Augmentation_and_FS_for_SLR#implementation-details)
 
-3. [Results](https://github.com/Deepknowledge-US/TAL-IA/edit/main/Data_Augmentation_and_DF_for_SLR#results)
+3. [Results](https://github.com/Deepknowledge-US/TAL-IA/edit/main/Data_Augmentation_and_FS_for_SLR#results)
 
-4. [Future work](https://github.com/Deepknowledge-US/TAL-IA/edit/main/Data_Augmentation_and_DF_for_SLR#future-work)
+4. [Future work](https://github.com/Deepknowledge-US/TAL-IA/edit/main/Data_Augmentation_and_FS_for_SLR#future-work)
 
 ## Methodology
 
 The first aim is to gather a sufficiently extensive dataset for training models focused on Isolated Sign Language Recognition (ISLR). For this purpose, a dataset called CALSE-100 (Conjunto Aislado de Lengua de Signos Española) composed of 100 gloss with 600 videos in total collected from different data sources has been defined and is available at [this address](https://uses0-my.sharepoint.com/:f:/g/personal/mptrigo_us_es/EnaUwfyXahFPoSOg_mj4JwEBsRXjKIVNDtMYpAqv714bhg?e=Q7tJ7L).   
 
-In addition, data expansion techniques have been applied: [*data augmentation*](https://github.com/Deepknowledge-US/TAL-IA/edit/main/Data_Augmentation_and_DF_for_SLR/data_augmentation), which is usually used in several fields of deep learning to improve the quality and size of the training set, as well as [*FaceSwapping*](https://github.com/Deepknowledge-US/TAL-IA/edit/main/Data_Augmentation_and_DF_for_SLR/faceswapping), which besides expanding the content of the training set will allow to anonymize the data while maintaining the facial expression of the signs.
+In addition, data expansion techniques have been applied: [*data augmentation*](https://github.com/Deepknowledge-US/TAL-IA/edit/main/Data_Augmentation_and_FS_for_SLR/data_augmentation), which is usually used in several fields of deep learning to improve the quality and size of the training set, as well as [*FaceSwapping*](https://github.com/Deepknowledge-US/TAL-IA/edit/main/Data_Augmentation_and_FS_for_SLR/faceswapping), which besides expanding the content of the training set will allow to anonymize the data while maintaining the facial expression of the signs.
 
 ### CALSE-100 Dataset 
 The CALSE-100 set has been formed by obtaining videos from 3 different, publicly available data sources, which are the Dictionary of Spanish Sign Language ([DILSE](https://fundacioncnse-dilse.org/)) and Spread the Sign ([STS](http://www.spreadthesign.com/es.es/search/)) dictionaries, as well as the dataset from the University Community Assistance Service ([SACU](https://sacu.us.es/ne-prestaciones-discapacidad-glosario)) of the University of Seville.
