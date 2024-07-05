@@ -3,7 +3,7 @@
 1. [Methodology](https://github.com/Deepknowledge-US/TAL-IA/tree/main/Data%20Augmentation%20and%20DF%20for%20SLR#methodology)
     - [CALSE-100 Dataset](https://github.com/Deepknowledge-US/TAL-IA/tree/main/Data%20Augmentation%20and%20DF%20for%20SLR#calse-100-dataset)
     - [Data augmentation](https://github.com/Deepknowledge-US/TAL-IA/tree/main/Data%20Augmentation%20and%20DF%20for%20SLR#data-augmentation)
-    - [Deepfakes](https://github.com/Deepknowledge-US/TAL-IA/tree/main/Data%20Augmentation%20and%20DF%20for%20SLR#deepfakes)
+    - [FaceSwapping](https://github.com/Deepknowledge-US/TAL-IA/tree/main/Data%20Augmentation%20and%20DF%20for%20SLR#faceswapping)
 
 2. [Implementation details](https://github.com/Deepknowledge-US/TAL-IA/tree/main/Data%20Augmentation%20and%20DF%20for%20SLR#implementation-details)
 
@@ -15,7 +15,7 @@
 
 The first aim is to gather a sufficiently extensive dataset for training models focused on Isolated Sign Language Recognition (ISLR). For this purpose, a dataset called CALSE-100 (Conjunto Aislado de Lengua de Signos Española) composed of 100 gloss with 600 videos in total collected from different data sources has been defined and is available at [this address](https://uses0-my.sharepoint.com/:f:/g/personal/mptrigo_us_es/EnaUwfyXahFPoSOg_mj4JwEBsRXjKIVNDtMYpAqv714bhg?e=Q7tJ7L).   
 
-In addition, data expansion techniques have been applied: [*data augmentation*](https://github.com/Deepknowledge-US/TAL-IA/tree/main/Data%20Augmentation%20and%20DF%20for%20SLR/data_augmentation), which is usually used in several fields of deep learning to improve the quality and size of the training set, as well as [*Deepfakes*](https://github.com/Deepknowledge-US/TAL-IA/tree/main/Data%20Augmentation%20and%20DF%20for%20SLR/deepfakes), which besides expanding the content of the training set will allow to anonymize the data while maintaining the facial expression of the signs.
+In addition, data expansion techniques have been applied: [*data augmentation*](https://github.com/Deepknowledge-US/TAL-IA/tree/main/Data%20Augmentation%20and%20DF%20for%20SLR/data_augmentation), which is usually used in several fields of deep learning to improve the quality and size of the training set, as well as [*FaceSwapping*](https://github.com/Deepknowledge-US/TAL-IA/tree/main/Data%20Augmentation%20and%20DF%20for%20SLR/faceswapping), which besides expanding the content of the training set will allow to anonymize the data while maintaining the facial expression of the signs.
 
 ### CALSE-100 Dataset 
 The CALSE-100 set has been formed by obtaining videos from 3 different, publicly available data sources, which are the Dictionary of Spanish Sign Language ([DILSE](https://fundacioncnse-dilse.org/)) and Spread the Sign ([STS](http://www.spreadthesign.com/es.es/search/)) dictionaries, as well as the dataset from the University Community Assistance Service ([SACU](https://sacu.us.es/ne-prestaciones-discapacidad-glosario)) of the University of Seville.
@@ -50,13 +50,13 @@ Although several functions are implemented to apply transformations, we will onl
 
 
 
-### Deepfakes
+### FaceSwapping
 To avoid possible problems in maintaining identity through anonymization of the data, the [FaceSwap](https://github.com/deepfakes/faceswap) tool has been used, which employs Deep Learning techniques to recognize and swap faces in each of the signers that make up the CALSE-100 dataset
 
 The face swapping to generate Deepfakes is composed of 3 stages: 
 - Extraction: in this first stage, the extraction of faces from the target video for the later training takes place, in which face landmarks are recognized and the images are cropped, saving the faces to be used for training. In this first step, it is important to have a large set of images containing the face of the subject to be trained, as well as to consider the data's quality and the variety of angles and expressions.
 - Training: in this step, the training of the `Phaze-a' model from FaceSwap is executed for 35,000-40,000 iterations (it depends on the models used for the face swapping), with a batch size of 10.
-- Conversion: in this last stage, the face extraction is performed again (in this case, on the source video) and then the face swapping is performed to obtain the final set of videos with Deepfakes applied.
+- Conversion: in this last stage, the face extraction is performed again (in this case, on the source video) and then the face swapping is performed to obtain the final set of videos with FaceSwapping applied.
 
 <p align="center">
 <img src="img/DF.png" alt="Macarena views" width="70%">
@@ -74,7 +74,7 @@ Due to the limited number of samples available for each sign, the dataset was di
 <img src="img/preliminar_experiments.png" alt="preliminar experimentss" width="70%">
 </p>
 
-To assess the effect of data augmentation on CALSE-100 training, a test battery was created that merged original data from the training set with data generated through Deepfakes and other augmentations. For Deepfakes, three models (two male and one female) were utilized, with 200 new videos generated for each model. Not all of the Deepfake videos created during training were used.
+To assess the effect of data augmentation on CALSE-100 training, a test battery was created that merged original data from the training set with data generated through FaceSwapping and other augmentations. For FaceSwapping, three models (two male and one female) were utilized, with 200 new videos generated for each model. Not all of the FaceSwapping videos created during training were used.
 Additionally, affine transformations were randomly applied to each video in the dataset, with AF1 and AF2 differing in the dataset to which they were applied. Specifically, AF1 corresponds to the affine transformation applied to our interpreter videos, while AF2 applies to videos from the public datasets. 
 
 ## Results 
